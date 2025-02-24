@@ -1,0 +1,20 @@
+to start mangodb
+================
+brew services start mongodb/brew/mongodb-community
+
+to stop mangodb
+==================
+brew services stop mongodb/brew/mongodb-community
+
+Manually Start MongoDB 
+========================
+mongod --config /usr/local/etc/mongod.conf --fork
+
+MongoDB is listening on its default port (27017)
+======================================
+# For netstat
+netstat -an | grep 27017
+
+# For lsof
+lsof -i :27017
+
